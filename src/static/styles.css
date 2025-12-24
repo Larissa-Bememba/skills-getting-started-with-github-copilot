@@ -142,3 +142,80 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section h5 {
+  margin: 12px 0 8px;
+  color: #2c387e;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.participants {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.participants li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ffffff, #fbfcff);
+  border: 1px solid #e8eefc;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a237e, #3949ab);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(26, 35, 126, 0.12);
+  flex: 0 0 auto;
+}
+
+.participant-email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Ensure the participant row spreads items so delete button sits on the right */
+.participants li {
+  justify-content: space-between;
+}
+
+.participant-email {
+  flex: 1 1 auto;
+  margin: 0 10px;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  background: rgba(198,40,40,0.08);
+}
+
+.no-participants {
+  color: #6b7280;
+  font-style: italic;
+  padding: 6px 0;
+}
